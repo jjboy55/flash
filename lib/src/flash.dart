@@ -22,7 +22,7 @@ enum FlashDismissDirection {
   startToEnd,
 }
 
-/// A highly customizable widget so you can notify your user when you fell like he needs a beautiful explanation.
+/// A highly customizable widget that notifies your user when you feel they need a beautiful explanation.
 class Flash<T> extends StatefulWidget {
   const Flash({
     Key? key,
@@ -387,15 +387,20 @@ class FlashBar<T> extends StatefulWidget {
 
   /// The direction in which the widget can be dismissed.
   final List<FlashDismissDirection> dismissDirections;
-
+  
+  /// The curve used for forward animation transitions.
   final Curve forwardAnimationCurve;
 
+  /// The curve used for forward animation transitions.
   final Curve reverseAnimationCurve;
 
+  /// The margin for an element, specified as insets, or null if no margin is defined.
   final EdgeInsets? margin;
 
+  /// The background color, or null if no background color is specified.
   final Color? backgroundColor;
-
+  
+  /// The elevation, or z-coordinate, of an element, specified as a double value, or null if no elevation is defined.
   final double? elevation;
 
   final Color? shadowColor;
@@ -924,7 +929,7 @@ class FlashToastTheme extends ThemeExtension<FlashToastTheme> {
     this.margin = const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
     this.padding = const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
   });
-
+  
   final Color? backgroundColor;
 
   final double elevation;
